@@ -1,0 +1,65 @@
+
+\chapter{Introduzione}
+Negli ultimi anni il panorama della gestione dei dati e' cambiato radicalmente. Si e' passati dalle classiche banche dati bancare e finanziarie a \textit{Data Warehouse} di dimensioni enormi per supportare le decisioni di business di aziende di tutti i tipi.
+Questo cambiamento e' dovuta ad un incremento della \textbf{quantita' di dati} a disposizione. Questi dati sono prevalentemente generati dall'attivita' degli utenti sui vari social networks e da innumerevoli strumenti scientifici che producono dati:
+
+\begin{itemize}
+  \item \textbf{User Generate Content} 
+  \item \textbf{Health and Scientific Computing} 
+\end{itemize}
+Queste due origini hanno comportato il cambio di utenti passivi in attivi e queste nuove macchine generatrici hanno permesso lo sviluppo di modelli \textbf{Data Driven}. 
+Questo enorme aumento impatta ovviamente anche le basi di dati che dipendono nel loro design dalla \textbf{mole dei dati, lo scopo ed il tipo di attivita'} che si vogliono effettuare su di esse. In particolare si e' vista una transizione da sistemi \textit{OLAP}, Online Transaction Processing, a \textit{OLAP}, Online Analytical Processing.
+
+
+\section{Cosa sono i Big Data}
+Arriviamo dunque al frutto di questi cambiamenti, la nascita' dei \textbf{Big data}. In questa disciplina rientra un po' di tutto ma sostanzialmente possiamo definirla cosi:
+"Insiemi di dati la cui \textbf{\textit{scala}}, \textbf{\textit{complessita'}} e\textbf{\textit{ diversita'}} necessitano nuove architetture, tecniche algoritmiche e metodologie di analsi nuove per poterne estrarre del valore della conoscenza."
+
+I Big data sono caratterizzati dalle seguenti proprieta':
+\begin{enumerate}
+  \item Volume
+  \item Velocita' di generazione
+  \item Varieta'
+  \item Veracity, in italiano sarebbe veridicita' ma ci si riferisce di piu' al concetto di qualita' del dato
+\end{enumerate}
+
+Queste proprieta' impattano un sistema basato sui Big Data in vari modi, dalla velocita' con cui vogliamo l'output di un'analisi al modo migliore di interpretarli.
+
+\section{Cos'e' la Data Science}
+Benissimo, adesso che abbiamo tutti sti dati che c'e' ne facciamo? L'obiettivo finale e' sostanzialmente passare da dei dati \textbf{grezzi} a dei dati \textbf{significativi}. Vogliamo un processo di questo genere:
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[
+        node distance=1cm and 1cm,
+        box/.style={rectangle, draw, rounded corners, minimum height=1cm, minimum width=2cm, align=center, fill=blue!5, font=\bfseries},
+        arrow/.style={-{Stealth[scale=1.2]}, thick}
+    ]
+        % Nodes
+        \node[box] (gen) {Generazione};
+        \node[box, right=of gen] (rac) {Raccolta};
+        \node[box, right=of rac] (mem) {Memorizzazione /\\Trasmissione};
+        \node[box, right=of mem] (ana) {Analisi};
+        
+        % Arrows
+        \draw[arrow] (gen) -- (rac);
+        \draw[arrow] (rac) -- (mem);
+        \draw[arrow] (mem) -- (ana);
+    \end{tikzpicture}
+    \caption{Le fasi del ciclo di vita dei dati.}
+    \label{fig:ciclo_vita_dati}
+\end{figure}
+
+\subsubsection{Generazione}
+Subsubsection content...
+
+\subsubsection{Raccolta}
+Subsubsection content...
+
+\subsubsection{Memorizzazione/Trasmissione}
+Subsubsection content...
+
+\subsubsection{Analisi}
+Subsubsection content...
+
+La gestione di tutti questi aspetti prende il nome di \textbf{Data Science} ed attraverso la \textit{Knowledge Discovery in Databases} ci porta iterativamente a nuovi \textbf{insights}.

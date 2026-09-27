@@ -1,0 +1,41 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta, shapes.geometric}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    
+    {\Huge\bfseries Data Science E Tecnologie Per Le Basi Di Dati \par}
+    \vspace{1cm}
+    {\Large Appunti ed Esercizi della Laurea Magistrale\par}
+    \vspace{2cm}
+    
+    % Image placeholder
+    \includegraphics[width=0.75\textwidth]{images/cover.jpg}
+    \vfill
+    
+    {\Large\itshape Vincenzo Russotto \par}
+    \vspace{0.5cm}
+    {\large 2026 \par}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+\input{chapters/introduzione.tex}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

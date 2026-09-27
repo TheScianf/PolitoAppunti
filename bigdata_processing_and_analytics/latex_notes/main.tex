@@ -1,0 +1,51 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    
+    {\Huge\bfseries Bigdata Processing And Analytics \par}
+    \vspace{1cm}
+    {\Large Master's Degree Notes and Exercises\par}
+    \vspace{2cm}
+    
+    % Image placeholder
+    \includegraphics[width=0.5\textwidth]{example-image}
+    \vfill
+    
+    {\Large\itshape Vincenzo Russotto \par}
+    \vspace{0.5cm}
+    {\large 2026 \par}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\chapter{First Chapter}
+% \input{chapters/01_chapter.tex}
+This is the beginning of the notes for Bigdata Processing And Analytics. 
+
+\section{Examples}
+Here is how you reference an image (see \cref{fig:placeholder}) or a bibliography entry (see \cite{example_article}).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.3\textwidth]{example-image}
+    \caption{Placeholder image.}
+    \label{fig:placeholder}
+\end{figure}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

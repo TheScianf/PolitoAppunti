@@ -1,0 +1,52 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    
+    {\Huge\bfseries Tecnologie E Servizi Di Rete \par}
+    \vspace{1cm}
+    {\Large Appunti ed Esercizi della Laurea Magistrale\par}
+    \vspace{2cm}
+    
+    % Image placeholder
+    \includegraphics[width=0.5\textwidth]{example-image}
+    \vfill
+    
+    {\Large\itshape Vincenzo Russotto \par}
+    \vspace{0.5cm}
+    {\large 2026 \par}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\chapter{Primo Capitolo}
+% \input{chapters/01_chapter.tex}
+Questo è l'inizio degli appunti per Tecnologie E Servizi Di Rete. 
+
+\section{Esempi}
+Ecco come referenziare un'immagine (vedi \cref{fig:placeholder}) o una voce della bibliografia (vedi \cite{example_article}).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.3\textwidth]{example-image}
+    \caption{Immagine di esempio.}
+    \label{fig:placeholder}
+\end{figure}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
